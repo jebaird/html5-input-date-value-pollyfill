@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>html5 input date value demo</h1>
+
+        <!-- works -->
+        renders as 12/01/2015
+        <input type="date" value="2015-12-1">
+
+        <br> 
+
+        renders as 11/05/2015
+        <input type="date" value="11/05/2015">
+        <br>
+
+        renders as 12/25/2000
+        <input type="date" value="12/25/2000">
+
+        <script type="text/javascript" src="html5-input-date-value-pollyfill.js"></script>
+
+        <script>
+        (function(){
+             var dateInputs = document.querySelectorAll('[type=date]'),
+                input,
+                i = dateInputs.length;
+
+            while ( i-- ){
+                input = dateInputs[ i ];
+
+                console.log('parsed', input.getAttribute('value'), html5InputDateValueParse( input.getAttribute('value') ));
+                input.value = html5InputDateValueParse( input.getAttribute('value') )
+            }
+        })()
+
+        </script>
+
+    </body>
+</html>

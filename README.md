@@ -1,7 +1,7 @@
 # html5-input-date-value-pollyfill
 
 
-Allows you to set the value of `<input type="date" value="hello world" value="12/1/2015">`
+Allows you to set the value of `<input type="date" is="date-parse-value" value="hello world" value="12/1/2015">`
 
 by default the browser will render.
 

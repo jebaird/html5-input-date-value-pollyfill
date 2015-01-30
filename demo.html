@@ -19,11 +19,15 @@
         renders as 12/25/2000
         <input type="date" value="12/25/2000">
 
+        <br>
+        custom element -  &lt;input type="date" is="date-parse-value" value="12/25/2000"&gt;
+        <pre> <input type="date" is="date-parse-value" value="12/25/2000"></pre>
+
         <script type="text/javascript" src="html5-input-date-value-pollyfill.js"></script>
 
         <script>
         (function(){
-             var dateInputs = document.querySelectorAll('[type=date]'),
+             var dateInputs = document.querySelectorAll('[type=date]:not([is])'),
                 input,
                 i = dateInputs.length;
 

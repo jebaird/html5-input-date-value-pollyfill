@@ -29,5 +29,8 @@ Include `<script type="text/javascript" src="html5-input-date-value-pollyfill.js
         }
     })()
 
+or, if your browser supports custom elements the following will work too
+
+     <input type="date" is="date-parse-value" value="12/25/2000">
 
 The function ` html5InputDateValueParse()` can be called at any time if you add an input after the dom as been loaded.

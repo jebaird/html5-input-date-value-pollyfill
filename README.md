@@ -11,10 +11,7 @@ It will render the desired value
 
 ![](http://i.imgur.com/K0EQDp2.png)
 
-
-## Demo
-
-<iframe src="https://rawgit.com/jebaird/html5-input-date-value-pollyfill/master/demo.html" width="100%" height="250px" ></iframe>
+Click [here](https://rawgit.com/jebaird/html5-input-date-value-pollyfill/master/demo.html) to see it in action.
 
 
 ### Getting setup
